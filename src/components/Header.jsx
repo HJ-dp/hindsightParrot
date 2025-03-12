@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 function Header() {
   return (
     <Container>
-      <img src="src/assets/real.png" alt="" />
+      <img src="/src/assets/real.png" alt="" />
       <h2>껄무새</h2>
     </Container>
   );
