@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
+import realIcon from "../assets/real.png";
 
 function Header() {
   return (
     <Container>
-      <img src="/src/assets/real.png" alt="" />
+      <img src={realIcon} alt="icon" />
       <h2>껄무새</h2>
     </Container>
   );
