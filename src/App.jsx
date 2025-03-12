@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "@emotion/styled";
 
 import BoxList from "./components/BoxList";
-import ContentBox from "./components/contentBox";
+import ContentBox from "./components/ContentBox";
 import { useCalculate } from "./hooks/useCalculate";
 import dayjs from "dayjs";
 import Header from "./components/Header";
