@@ -21,8 +21,8 @@ function App() {
     <>
       <Header />
       <SinputContainer>
-        언제부터 쉬었는지 입력
-        <input type="date" onChange={handleDateChange} />
+        <Sinput type="date" onChange={handleDateChange} />
+        <div>이때 정신차릴걸</div>
       </SinputContainer>
       <BoxList>
         {Object.values(calculations)
@@ -41,9 +41,27 @@ function App() {
 }
 
 const SinputContainer = styled.div`
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   padding: 2rem;
+`;
+
+const Sinput = styled.input`
+  background-color: #40c754;
+  padding: 1rem;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 0.1rem;
+
+  &::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.1rem;
+  }
 `;
 
 export default App;
